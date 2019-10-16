@@ -2,6 +2,8 @@ import { Route, withRouter, Redirect } from "react-router-dom";
 import React, { Component } from "react";
 import Login from "./authenticate/Login";
 import Register from "./register/Register";
+import MyWorkoutList from "./myworkout/MyWorkoutList";
+import MyWorkoutForm from "./myworkout/MyWorkoutForm";
 
 class ApplicationViews extends Component {
 
@@ -48,7 +50,7 @@ class ApplicationViews extends Component {
 
           <Route
           exact
-          path="/myworkouts"
+          path="/myworkout"
           render={props => {
             return this.credentialAuth() ? (
               <MyWorkoutList {...props} />
@@ -58,7 +60,7 @@ class ApplicationViews extends Component {
           }}
         />
         <Route
-          path="/myworkouts/new"
+          path="/myworkout/new"
           render={props => {
             return this.credentialAuth() ? (
               <MyWorkoutForm {...props} />
@@ -68,7 +70,7 @@ class ApplicationViews extends Component {
           }}
         />
         <Route
-          path="/myworkouts/:workoutId(\d+)/edit"
+          path="/myworkout/:workoutId(\d+)/edit"
           render={props => {
             return this.credentialAuth() ? (
               <MyWorkoutEditForm {...props} />
