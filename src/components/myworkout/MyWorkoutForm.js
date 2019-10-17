@@ -5,9 +5,6 @@ import MyWorkoutManager from "../../modules/MyWorkoutManager";
 class MyWorkoutForm extends Component {
   state = {
     workoutName: "",
-    sets: "",
-    reps: "",
-    weight: "",
     date: "",
     loadingStatus: false
   };
@@ -22,15 +19,12 @@ class MyWorkoutForm extends Component {
    */
   constructNewEvent = evt => {
     evt.preventDefault();
-    if (this.state.workoutName === "" || this.state.sets === "" || this.state.reps === "" || this.state.weight === "") {
+    if (this.state.workoutName === "" || this.state.date === "") {
       window.alert("Please input a workout name, amount of sets, reps, weight and then a date");
     } else {
       this.setState({ loadingStatus: true });
       const workout = {
         name: this.state.workoutName,
-        sets: this.state.sets,
-        reps: this.state.reps,
-        weight: this.state.weight,
         date: this.state.date,
         active: true,
         userId: 1
@@ -57,32 +51,6 @@ class MyWorkoutForm extends Component {
                 placeholder="Workout name"
               />
               <label htmlFor="workoutName">Name</label>
-              <input
-                type="number"
-                name="quantity"
-                min="1" max="5"
-                required
-                onChange={this.handleFieldChange}
-                id="sets"
-                placeholder="Sets"
-              />
-              <label htmlFor="sets">Sets</label>
-              <input
-                type="text"
-                required
-                onChange={this.handleFieldChange}
-                id="reps"
-                placeholder="Reps"
-              />
-              <label htmlFor="reps">Reps</label>
-              <input
-                type="text"
-                required
-                onChange={this.handleFieldChange}
-                id="weight"
-                placeholder="Weight"
-              />
-              <label htmlFor="weight">Weight</label>
               <input
                 type="date"
                 required

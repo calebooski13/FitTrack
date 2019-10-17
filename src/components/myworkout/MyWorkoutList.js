@@ -19,15 +19,15 @@ class MyWorkoutList extends Component {
     });
   };
 
-  componentDidMount() {
-    console.log("WORKOUT LIST: ComponentDidMount");
-    //getAll from MyWorkoutManager and hang on to that data; put it in state
-    MyWorkoutManager.getAll().then(workoutsFromDatabase => {
-      this.setState({
-        workouts: workoutsFromDatabase
-      });
-    });
-  }
+//   componentDidMount() {
+//     console.log("WORKOUT LIST: ComponentDidMount");
+//     //getAll from MyWorkoutManager and hang on to that data; put it in state
+//     MyWorkoutManager.getAll().then(workoutsFromDatabase => {
+//       this.setState({
+//         workouts: workoutsFromDatabase
+//       });
+//     });
+//   }
 
   render() {
     console.log("WorkoutList: Render");

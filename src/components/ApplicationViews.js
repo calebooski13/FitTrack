@@ -1,7 +1,8 @@
 import { Route, withRouter, Redirect } from "react-router-dom";
 import React, { Component } from "react";
 import Login from "./authenticate/Login";
-import Register from "./register/Register";
+import Register from "./home/Home";
+import Home from "./register/Register";
 import MyWorkoutList from "./myworkout/MyWorkoutList";
 import MyWorkoutForm from "./myworkout/MyWorkoutForm";
 
@@ -69,7 +70,7 @@ class ApplicationViews extends Component {
             );
           }}
         />
-        <Route
+        {/* <Route
           path="/myworkout/:workoutId(\d+)/edit"
           render={props => {
             return this.credentialAuth() ? (
@@ -78,7 +79,7 @@ class ApplicationViews extends Component {
               <Redirect to="/" />
             );
           }}
-        />
+        /> */}
           </React.Fragment>
     );
   }

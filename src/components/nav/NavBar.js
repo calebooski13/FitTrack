@@ -12,7 +12,7 @@ class NavBar extends Component {
     <div className="nav-wrapper">
       <ul className="container">
            <li><Link className="nav-link" to="/home">Home</Link></li>
-           <li><Link className="nav-link" to="/myworkouts">My Workouts</Link></li>
+           <li><Link className="nav-link" to="/myworkout">My Workouts</Link></li>
            <li><Link className="nav-link" to="/photos">Photos</Link></li>
       </ul>
     </div>
