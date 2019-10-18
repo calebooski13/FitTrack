@@ -5,6 +5,7 @@ import Register from "./home/Home";
 import Home from "./register/Register";
 import MyWorkoutList from "./myworkout/MyWorkoutList";
 import MyWorkoutForm from "./myworkout/MyWorkoutForm";
+import MyWorkoutDetail from "./myworkout/MyWorkoutDetail";
 
 class ApplicationViews extends Component {
 
@@ -65,6 +66,16 @@ class ApplicationViews extends Component {
           render={props => {
             return this.credentialAuth() ? (
               <MyWorkoutForm {...props} />
+            ) : (
+              <Redirect to="/" />
+            );
+          }}
+        />
+        <Route
+          path="/workouts/:workoutId"
+          render={props => {
+            return this.credentialAuth() ? (
+              <MyWorkoutDetail {...props} />
             ) : (
               <Redirect to="/" />
             );

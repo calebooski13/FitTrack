@@ -1,9 +1,24 @@
 const remoteURL = "http://localhost:5002"
 
 export default {
-    get_workouts(user_id) {
-        return fetch(`${remoteURL}/workouts?userId=${user_id}`).then(result => result.json())
+    getOneWorkout(id) {
+        return fetch(`${remoteURL}/workouts?userId=${id}`).then(result => result.json())
  },
+
+ getAll(id) {
+    return fetch(`${remoteURL}/workouts?userId=${id}`).then(result => result.json());
+  },
+
+ getAllExercises(id) {
+    return fetch(`${remoteURL}/exerciseWorkouts?workoutId=${id}&_expand=exercise`).then(result => result.json());
+  },
+
+ getWithWorkouts(id){
+    return fetch(`${remoteURL}/workouts/${id}?_expand=user&_embed=exerciseWorkouts`).then(result => result.json())
+  },
+//   getWithWorkouts(id){
+//     return fetch(`${remoteURL}/workouts/${id}?_expand=userId&_embed=exerciseWorkouts`).then(result => result.json())
+//   },
 
   post(newWorkout) {
     return fetch(`${remoteURL}/workouts`, {
