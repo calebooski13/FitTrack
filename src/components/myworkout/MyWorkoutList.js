@@ -39,7 +39,7 @@ class MyWorkoutList extends Component {
             type="button"
             className="btn"
             onClick={() => {
-              this.props.history.push("/workouts/new");
+              this.props.history.push("/myworkouts/new");
             }}
           >Create Workout</button>
         </section>

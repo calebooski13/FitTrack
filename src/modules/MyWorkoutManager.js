@@ -5,8 +5,16 @@ export default {
         return fetch(`${remoteURL}/workouts?userId=${id}`).then(result => result.json())
  },
 
- getAll(id) {
-    return fetch(`${remoteURL}/workouts?userId=${id}`).then(result => result.json());
+ getAll() {
+    return fetch(`${remoteURL}/workouts`).then(result => result.json());
+  },
+
+// Delete a workout
+
+  delete(id) {
+    return fetch(`${remoteURL}/workouts/${id}`, {
+      method: "DELETE"
+    }).then(result => result.json());
   },
 
  getAllExercises(id) {
@@ -28,4 +36,15 @@ export default {
       },
       body: JSON.stringify(newWorkout)
     }).then(data => data.json());
-  },}
+  },
+
+//   post(newDetailsWorkout) {
+//     return fetch(`${remoteURL}/workouts/${id}`, {
+//         method: "POST",
+//       headers: {
+//         "Content-Type": "application/json"
+//       },
+//       body: JSON.stringify(newDetailsWorkout)
+//     }).then(data => data.json());
+//   },
+}

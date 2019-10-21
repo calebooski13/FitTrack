@@ -6,10 +6,12 @@ class MyWorkoutForm extends Component {
   state = {
     workoutName: "",
     date: "",
-    loadingStatus: false
+    loadingStatus: false,
   };
 
   handleFieldChange = evt => {
+    console.log("this is event.target.id", evt.target.id);
+    console.log("this is event.target.value", evt.target.value);
     const stateToChange = {};
     stateToChange[evt.target.id] = evt.target.value;
     this.setState(stateToChange);
@@ -20,7 +22,7 @@ class MyWorkoutForm extends Component {
   constructNewEvent = evt => {
     evt.preventDefault();
     if (this.state.workoutName === "" || this.state.date === "") {
-      window.alert("Please input a workout name, amount of sets, reps, weight and then a date");
+      window.alert("Please input a workout name, and then a date");
     } else {
       this.setState({ loadingStatus: true });
       const workout = {
@@ -51,6 +53,7 @@ class MyWorkoutForm extends Component {
                 placeholder="Workout name"
               />
               <label htmlFor="workoutName">Name</label>
+              <br></br>
               <input
                 type="date"
                 required
@@ -59,6 +62,7 @@ class MyWorkoutForm extends Component {
                 placeholder="Workout date"
               />
               <label htmlFor="date">Date</label>
+
             </div>
             <div className="alignRight">
               <button

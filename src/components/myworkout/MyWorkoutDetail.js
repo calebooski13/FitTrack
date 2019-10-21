@@ -7,6 +7,14 @@ class MyWorkoutDetail extends Component {
     workouts: []
   };
 
+  handleDelete = () => {
+    console.log("this is props", this.props)
+    //invoke the delete function in MyWorkoutManger and re-direct to the workout list.
+    this.setState({loadingStatus: true})
+    MyWorkoutManager.delete(this.props.workoutId)
+    .then(() => this.props.history.push("/workouts"))
+}
+
   componentDidMount() {
     console.log("MyWorkoutDetail: ComponentDidMount");
     //get(id) from MyWorkoutManager and hang on to the data; put it into state
@@ -22,6 +30,11 @@ class MyWorkoutDetail extends Component {
   render() {
     return (
       <div className="card">
+          <button
+            className="add exercise button"
+            onClick={this.navigateBack}>
+            Add exercise
+        </button>
         <div className="card-content">
           {this.state.workouts.map(exercise => (
             <>
@@ -35,9 +48,15 @@ class MyWorkoutDetail extends Component {
               <p>Sets: {exercise.sets}</p>
               <p>Reps: {exercise.reps}</p>
               <p>Weight: {exercise.weight}</p>
+
             </>
           ))}
         </div>
+        <button
+            className="back button"
+            onClick={this.navigateBack}>
+            Back to workouts
+        </button>
       </div>
     );
   }
