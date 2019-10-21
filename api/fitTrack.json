@@ -1,304 +1,326 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "username": "admin",
-            "password": "admin",
-            "email": "email@email.com"
-        },
-        {
-            "id": 2,
-            "username": "random",
-            "password": "random",
-            "email": "random@random.com"
-        },
-        {
-            "id": 3,
-            "username": "bot",
-            "password":"bot",
-            "email": "bot@bot.com"
-        }
-    ],
-    "bodyparts": [
-        {
-            "id": 1,
-            "name": "chest"
-        },
-        {
-            "id": 2,
-            "name": "back"
-        },
-        {
-            "id": 3,
-            "name": "legs"
-        },
-        {
-            "id": 4,
-            "name": "arms"
-        },
-        {
-            "id": 5,
-            "name": "shoulders"
-        }
-    ],
-    "workouts": [
-        {
-            "id": 1,
-            "userId": 1,
-            "date": "10/3/2019"
-        },
-        {
-            "id": 2,
-            "userId": 2,
-            "date": "10/9/2019"
-        },
-        {
-            "id": 3,
-            "userId": 3,
-            "date": "10/15/2019"
-        },
-        {
-            "id": 4,
-            "userId": 2,
-            "date": "10/16/2019"
-        }
-    ],
-    "exercises": [
-        {
-            "id": 1,
-            "bodypartId": 1,
-            "name": "Barbell Bench Press",
-            "url": "https://www.muscleandfitness.com/workouts/chest-exercises/videos/barbell-bench-press"
-        },
-        {
-            "id": 2,
-            "bodypartId": 1,
-            "name": "Neutral Grip DB Incline Bench Press",
-            "url": "https://www.muscleandfitness.com/workouts/chest-exercises/videos/neutral-grip-dumbbell-incline-bench-press"
-        },
-        {
-            "id": 3,
-            "bodypartId": 1,
-            "name": "Dumbbell Fly",
-            "url": "https://www.bodybuilding.com/exercises/dumbbell-flyes"
-        },
-        {
-            "id": 4,
-            "bodypartId": 1,
-            "name": "Cable Crossover",
-            "url": "https://www.bodybuilding.com/exercises/cable-crossover"
-        },
-        {
-            "id": 5,
-            "bodypartId": 1,
-            "name": "Bodyweight Push-up",
-            "url": "http://www.masteringbodyweightexercise.com/powerful-bodyweight-exercises/mastering-push-ups/"
-        },
-        {
-            "id": 6,
-            "bodypartId": 2,
-            "name": "Close Grip Cable Row",
-            "url": "https://www.youtube.com/watch?v=7BuoyPcW_tE"
-        },
-        {
-            "id": 7,
-            "bodypartId": 2,
-            "name": "Smith Machine Bent Over Row",
-            "url": "https://www.youtube.com/watch?v=kJgVXCLquQI"
-        },
-        {
-            "id": 8,
-            "bodypartId": 2,
-            "name": "One Arm Dumbbell Row",
-            "url": "https://www.youtube.com/watch?v=PgpQ4-jHiq4"
-        },
-        {
-            "id": 9,
-            "bodypartId": 2,
-            "name": "Wide-Grip Lat Pulldown",
-            "url": "https://www.bodybuilding.com/exercises/wide-grip-lat-pulldown"
-        },
-        {
-            "id": 10,
-            "bodypartId": 2,
-            "name": "Pullups",
-            "url": "https://www.bodybuilding.com/exercises/pullups"
-        },
-        {
-            "id": 11,
-            "bodypartId": 3,
-            "name": "Lying Leg Curls",
-            "url": "https://www.bodybuilding.com/exercises/lying-leg-curls"
-        },
-        {
-            "id": 12,
-            "bodypartId": 3,
-            "name": "Narrow Stance Leg Press",
-            "url": "https://www.bodybuilding.com/exercises/narrow-stance-leg-press"
-        },
-        {
-            "id": 13,
-            "bodypartId": 3,
-            "name": "Wide Hack Squat",
-            "url": "https://www.muscleandstrength.com/exercises/wide-hack-squat.html"
-        },
-        {
-            "id": 14,
-            "bodypartId": 3,
-            "name": "Walking Lunge",
-            "url": "https://www.stack.com/a/walking-lunges"
-        },
-        {
-            "id": 15,
-            "bodypartId": 3,
-            "name": "Stiff Leg Deadlift",
-            "url": "https://www.muscleandstrength.com/exercises/stiff-leg-deadlift-aka-romanian-deadlift.html"
-        },
-        {
-            "id": 16,
-            "bodypartId": 4,
-            "name": "Triceps Pushdown",
-            "url": "https://www.bodybuilding.com/exercises/triceps-pushdown"
-        },
-        {
-            "id": 17,
-            "bodypartId": 4,
-            "name": "Standing Biceps Cable Curl",
-            "url": "https://www.bodybuilding.com/exercises/standing-biceps-cable-curl"
-        },
-        {
-            "id": 18,
-            "bodypartId": 4,
-            "name": "One Arm Dumbbell Preacher Curl",
-            "url": "https://www.bodybuilding.com/exercises/one-arm-dumbbell-preacher-curl"
-        },
-        {
-            "id": 19,
-            "bodypartId": 4,
-            "name": "Dumbbell One-Arm Triceps Extension",
-            "url": "https://www.bodybuilding.com/exercises/dumbbell-one-arm-triceps-extension"
-        },
-        {
-            "id": 20,
-            "bodypartId": 4,
-            "name": "Hammer Curls",
-            "url": "https://www.bodybuilding.com/exercises/hammer-curls"
-        },
-        {
-            "id": 21,
-            "bodypartId": 4,
-            "name": "Body Dips",
-            "url": "https://stronglifts.com/dips/#gref"
-        },
-        {
-            "id": 22,
-            "bodypartId": 4,
-            "name": "Dumbbell Alternate Bicep Curl",
-            "url": "https://www.bodybuilding.com/exercises/dumbbell-alternate-bicep-curl"
-        },
-        {
-            "id": 23,
-            "bodypartId": 4,
-            "name": "Close-Grip Barbell Bench Press",
-            "url": "https://www.bodybuilding.com/exercises/close-grip-barbell-bench-press"
-        },
-        {
-            "id": 24,
-            "bodypartId": 4,
-            "name": "Machine Preacher Curl",
-            "url": "https://www.borntoworkout.com/machine-preacher-curl-what-is-it-how-to-do-alternatives/"
-        },
-        {
-            "id": 25,
-            "bodypartId": 4,
-            "name": "Cable Tricep Kickback",
-            "url": "https://www.muscleandstrength.com/exercises/cable-tricep-kickback.html"
-        },
-        {
-            "id": 26,
-            "bodypartId": 5,
-            "name": "Arnold Dumbbell Press",
-            "url": "https://www.bodybuilding.com/exercises/arnold-dumbbell-press"
-        },
-        {
-            "id": 27,
-            "bodypartId": 5,
-            "name": "One-Arm Side Laterals",
-            "url": "https://www.bodybuilding.com/exercises/one-arm-side-laterals"
-        },
-        {
-            "id": 28,
-            "bodypartId": 5,
-            "name": "Standing Military Press",
-            "url": "https://www.bodybuilding.com/exercises/standing-military-press"
-        },
-        {
-            "id": 29,
-            "bodypartId": 5,
-            "name": "Front Dumbbell Raise",
-            "url": "https://www.bodybuilding.com/exercises/front-dumbbell-raise"
-        },
-        {
-            "id": 30,
-            "bodypartId": 5,
-            "name": "Smith Machine Overhead Shoulder Press",
-            "url": "https://www.bodybuilding.com/exercises/smith-machine-overhead-shoulder-press"
-        }
-    ],
-    "exerciseWorkouts": [
-        {
-            "id": 1,
-            "exerciseId": 1,
-            "workoutId": 1,
-            "sets": 3,
-            "reps": "10-12",
-            "weight": "175 lbs"
-        },
-        {
-            "id": 1,
-            "exerciseId": 2,
-            "workoutId": 1,
-            "sets": 3,
-            "reps": "8-10",
-            "weight": "60 lbs"
-        },
-        {
-            "id": 1,
-            "exerciseId": 3,
-            "workoutId": 1,
-            "sets": "3-5",
-            "reps": "10-12",
-            "weight": "25 lbs"
-        },
-        {
-            "id": 1,
-            "exerciseId": 4,
-            "workoutId": 1,
-            "sets": "3-5",
-            "reps": "10-12",
-            "weight": "35 lbs"
-        },
-        {
-            "id": 1,
-            "exerciseId": 5,
-            "workoutId": 1,
-            "sets": 3,
-            "reps": "8-10",
-            "weight": "n/a"
-        }
-    ],
-    "photos": [
-        {
-            "id": 1,
-            "userId": 1,
-            "date":"10/15/2019",
-            "name": "beginning pic"
-        },
-        {
-            "id": 2,
-            "userId": 1,
-            "date":"11/15/2019",
-            "name": "one month in"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "email": "email@email.com"
+    },
+    {
+      "id": 2,
+      "username": "random",
+      "password": "random",
+      "email": "random@random.com"
+    },
+    {
+      "id": 3,
+      "username": "bot",
+      "password": "bot",
+      "email": "bot@bot.com"
+    },
+    {
+      "username": "jones",
+      "email": "jones@jones.com",
+      "password": "jones",
+      "id": 4
+    }
+  ],
+  "bodyparts": [
+    {
+      "id": 1,
+      "name": "chest"
+    },
+    {
+      "id": 2,
+      "name": "back"
+    },
+    {
+      "id": 3,
+      "name": "legs"
+    },
+    {
+      "id": 4,
+      "name": "arms"
+    },
+    {
+      "id": 5,
+      "name": "shoulders"
+    }
+  ],
+  "workouts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "Chest workout",
+      "date": "10/3/2019",
+      "active": true
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "name": "Back workout",
+      "date": "10/3/2019",
+      "active": true
+    },
+    {
+      "name": "Leg Workout",
+      "date": "2019-10-22",
+      "active": true,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "name": "Arm Workout",
+      "date": "2019-10-24",
+      "active": true,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "sets": "1",
+      "reps": "1",
+      "weight": "123",
+      "active": true,
+      "userId": 1,
+      "id": 5
+    }
+  ],
+  "exercises": [
+    {
+      "id": 1,
+      "bodypartId": 1,
+      "name": "Barbell Bench Press",
+      "url": "https://www.muscleandfitness.com/workouts/chest-exercises/videos/barbell-bench-press"
+    },
+    {
+      "id": 2,
+      "bodypartId": 1,
+      "name": "Neutral Grip DB Incline Bench Press",
+      "url": "https://www.muscleandfitness.com/workouts/chest-exercises/videos/neutral-grip-dumbbell-incline-bench-press"
+    },
+    {
+      "id": 3,
+      "bodypartId": 1,
+      "name": "Dumbbell Fly",
+      "url": "https://www.bodybuilding.com/exercises/dumbbell-flyes"
+    },
+    {
+      "id": 4,
+      "bodypartId": 1,
+      "name": "Cable Crossover",
+      "url": "https://www.bodybuilding.com/exercises/cable-crossover"
+    },
+    {
+      "id": 5,
+      "bodypartId": 1,
+      "name": "Bodyweight Push-up",
+      "url": "http://www.masteringbodyweightexercise.com/powerful-bodyweight-exercises/mastering-push-ups/"
+    },
+    {
+      "id": 6,
+      "bodypartId": 2,
+      "name": "Close Grip Cable Row",
+      "url": "https://www.youtube.com/watch?v=7BuoyPcW_tE"
+    },
+    {
+      "id": 7,
+      "bodypartId": 2,
+      "name": "Smith Machine Bent Over Row",
+      "url": "https://www.youtube.com/watch?v=kJgVXCLquQI"
+    },
+    {
+      "id": 8,
+      "bodypartId": 2,
+      "name": "One Arm Dumbbell Row",
+      "url": "https://www.youtube.com/watch?v=PgpQ4-jHiq4"
+    },
+    {
+      "id": 9,
+      "bodypartId": 2,
+      "name": "Wide-Grip Lat Pulldown",
+      "url": "https://www.bodybuilding.com/exercises/wide-grip-lat-pulldown"
+    },
+    {
+      "id": 10,
+      "bodypartId": 2,
+      "name": "Pullups",
+      "url": "https://www.bodybuilding.com/exercises/pullups"
+    },
+    {
+      "id": 11,
+      "bodypartId": 3,
+      "name": "Lying Leg Curls",
+      "url": "https://www.bodybuilding.com/exercises/lying-leg-curls"
+    },
+    {
+      "id": 12,
+      "bodypartId": 3,
+      "name": "Narrow Stance Leg Press",
+      "url": "https://www.bodybuilding.com/exercises/narrow-stance-leg-press"
+    },
+    {
+      "id": 13,
+      "bodypartId": 3,
+      "name": "Wide Hack Squat",
+      "url": "https://www.muscleandstrength.com/exercises/wide-hack-squat.html"
+    },
+    {
+      "id": 14,
+      "bodypartId": 3,
+      "name": "Walking Lunge",
+      "url": "https://www.stack.com/a/walking-lunges"
+    },
+    {
+      "id": 15,
+      "bodypartId": 3,
+      "name": "Stiff Leg Deadlift",
+      "url": "https://www.muscleandstrength.com/exercises/stiff-leg-deadlift-aka-romanian-deadlift.html"
+    },
+    {
+      "id": 16,
+      "bodypartId": 4,
+      "name": "Triceps Pushdown",
+      "url": "https://www.bodybuilding.com/exercises/triceps-pushdown"
+    },
+    {
+      "id": 17,
+      "bodypartId": 4,
+      "name": "Standing Biceps Cable Curl",
+      "url": "https://www.bodybuilding.com/exercises/standing-biceps-cable-curl"
+    },
+    {
+      "id": 18,
+      "bodypartId": 4,
+      "name": "One Arm Dumbbell Preacher Curl",
+      "url": "https://www.bodybuilding.com/exercises/one-arm-dumbbell-preacher-curl"
+    },
+    {
+      "id": 19,
+      "bodypartId": 4,
+      "name": "Dumbbell One-Arm Triceps Extension",
+      "url": "https://www.bodybuilding.com/exercises/dumbbell-one-arm-triceps-extension"
+    },
+    {
+      "id": 20,
+      "bodypartId": 4,
+      "name": "Hammer Curls",
+      "url": "https://www.bodybuilding.com/exercises/hammer-curls"
+    },
+    {
+      "id": 21,
+      "bodypartId": 4,
+      "name": "Body Dips",
+      "url": "https://stronglifts.com/dips/#gref"
+    },
+    {
+      "id": 22,
+      "bodypartId": 4,
+      "name": "Dumbbell Alternate Bicep Curl",
+      "url": "https://www.bodybuilding.com/exercises/dumbbell-alternate-bicep-curl"
+    },
+    {
+      "id": 23,
+      "bodypartId": 4,
+      "name": "Close-Grip Barbell Bench Press",
+      "url": "https://www.bodybuilding.com/exercises/close-grip-barbell-bench-press"
+    },
+    {
+      "id": 24,
+      "bodypartId": 4,
+      "name": "Machine Preacher Curl",
+      "url": "https://www.borntoworkout.com/machine-preacher-curl-what-is-it-how-to-do-alternatives/"
+    },
+    {
+      "id": 25,
+      "bodypartId": 4,
+      "name": "Cable Tricep Kickback",
+      "url": "https://www.muscleandstrength.com/exercises/cable-tricep-kickback.html"
+    },
+    {
+      "id": 26,
+      "bodypartId": 5,
+      "name": "Arnold Dumbbell Press",
+      "url": "https://www.bodybuilding.com/exercises/arnold-dumbbell-press"
+    },
+    {
+      "id": 27,
+      "bodypartId": 5,
+      "name": "One-Arm Side Laterals",
+      "url": "https://www.bodybuilding.com/exercises/one-arm-side-laterals"
+    },
+    {
+      "id": 28,
+      "bodypartId": 5,
+      "name": "Standing Military Press",
+      "url": "https://www.bodybuilding.com/exercises/standing-military-press"
+    },
+    {
+      "id": 29,
+      "bodypartId": 5,
+      "name": "Front Dumbbell Raise",
+      "url": "https://www.bodybuilding.com/exercises/front-dumbbell-raise"
+    },
+    {
+      "id": 30,
+      "bodypartId": 5,
+      "name": "Smith Machine Overhead Shoulder Press",
+      "url": "https://www.bodybuilding.com/exercises/smith-machine-overhead-shoulder-press"
+    }
+  ],
+  "exerciseWorkouts": [
+    {
+      "id": 1,
+      "exerciseId": 1,
+      "workoutId": 2,
+      "sets": 3,
+      "reps": "10-12",
+      "weight": "175 lbs"
+    },
+    {
+      "id": 2,
+      "exerciseId": 2,
+      "workoutId": 2,
+      "sets": 3,
+      "reps": "8-10",
+      "weight": "60 lbs"
+    },
+    {
+      "id": 3,
+      "exerciseId": 3,
+      "workoutId": 1,
+      "sets": "3-5",
+      "reps": "10-12",
+      "weight": "25 lbs"
+    },
+    {
+      "id": 4,
+      "exerciseId": 4,
+      "workoutId": 1,
+      "sets": "3-5",
+      "reps": "10-12",
+      "weight": "35 lbs"
+    },
+    {
+      "id": 5,
+      "exerciseId": 5,
+      "workoutId": 1,
+      "sets": 3,
+      "reps": "8-10",
+      "weight": "n/a"
+    }
+  ],
+  "photos": [
+    {
+      "id": 1,
+      "userId": 1,
+      "date": "10/15/2019",
+      "name": "beginning pic"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "date": "11/15/2019",
+      "name": "one month in"
+    }
+  ]
 }
