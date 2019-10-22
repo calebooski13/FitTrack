@@ -61,28 +61,6 @@
       "name": "Back workout",
       "date": "10/3/2019",
       "active": true
-    },
-    {
-      "name": "Leg Workout",
-      "date": "2019-10-22",
-      "active": true,
-      "userId": 1,
-      "id": 3
-    },
-    {
-      "name": "Arm Workout",
-      "date": "2019-10-24",
-      "active": true,
-      "userId": 1,
-      "id": 4
-    },
-    {
-      "sets": "1",
-      "reps": "1",
-      "weight": "123",
-      "active": true,
-      "userId": 1,
-      "id": 5
     }
   ],
   "exercises": [
@@ -307,6 +285,22 @@
       "sets": 3,
       "reps": "8-10",
       "weight": "n/a"
+    },
+    {
+      "sets": "2",
+      "reps": "2",
+      "weight": "77",
+      "workoutId": "1",
+      "active": true,
+      "id": 6
+    },
+    {
+      "sets": "1",
+      "reps": "1",
+      "weight": "888",
+      "workoutId": 1,
+      "active": true,
+      "id": 7
     }
   ],
   "photos": [

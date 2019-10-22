@@ -88,7 +88,7 @@ class ApplicationViews extends Component {
             return this.credentialAuth() ? (
               <MyWorkoutCreateDetailsForm {...props} />
             ) : (
-              <Redirect to="/" />
+              <Redirect to="workouts/" />
             );
           }}
         />
