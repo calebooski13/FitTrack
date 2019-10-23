@@ -61,6 +61,13 @@
       "name": "Back workout",
       "date": "10/3/2019",
       "active": true
+    },
+    {
+      "name": "Leg Day",
+      "date": "2019-10-24",
+      "active": true,
+      "userId": 1,
+      "id": 3
     }
   ],
   "exercises": [
@@ -287,20 +294,40 @@
       "weight": "n/a"
     },
     {
-      "sets": "2",
-      "reps": "2",
-      "weight": "77",
-      "workoutId": "1",
-      "active": true,
-      "id": 6
-    },
-    {
-      "sets": "1",
-      "reps": "1",
-      "weight": "888",
+      "sets": "3",
+      "reps": "3",
+      "weight": "98798798",
+      "exerciseId": 3,
       "workoutId": 1,
       "active": true,
-      "id": 7
+      "id": 8
+    },
+    {
+      "sets": "5",
+      "reps": "10",
+      "weight": "25 lbs",
+      "exerciseId": 14,
+      "workoutId": 3,
+      "active": true,
+      "id": 9
+    },
+    {
+      "sets": "3",
+      "reps": "5",
+      "weight": "25 lbs",
+      "exerciseId": 9,
+      "workoutId": 3,
+      "active": true,
+      "id": 10
+    },
+    {
+      "sets": "4",
+      "reps": "5",
+      "weight": "76",
+      "exerciseId": 14,
+      "workoutId": 3,
+      "active": true,
+      "id": 11
     }
   ],
   "photos": [

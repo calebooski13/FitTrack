@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import MyWorkoutManager from "../../modules/MyWorkoutManager";
 import ExerciseWorkoutManager from "../../modules/ExerciseWorkoutManager"
 
 class MyWorkoutCreateDetailsForm extends Component {
@@ -41,7 +40,7 @@ constructNewExerciseEvent = evt => {
       sets: this.state.sets,
       reps: this.state.reps,
       weight: this.state.weight,
-      // exerciseId: this.state.exercise.id,
+      exerciseId: +this.state.exerciseId,
       workoutId: +this.props.match.params.workoutId,
       // exercise: this.state.exercises.name,
 
@@ -61,6 +60,22 @@ render() {
         <form>
           <fieldset>
             <div className="formgrid">
+
+            <select
+                className="form-control"
+                id="exerciseId"
+                value={this.state.exerciseId}
+                onChange={this.handleFieldChange}
+              >
+                {this.state.exercises.map(exercise => (
+                  <option key={exercise.id} value={exercise.id}>
+                    {exercise.name}
+                  </option>
+                ))}
+              </select>
+              <label htmlFor="exercise">Exercise</label>
+              <br></br>
+
               <input
                 type="number"
                 required
@@ -90,19 +105,6 @@ render() {
               />
               <label htmlFor="weight">Weight</label>
 <br></br>
-              <select
-                className="form-control"
-                id="exerciseId"
-                value={this.state.exerciseId}
-                onChange={this.handleFieldChange}
-              >
-                {this.state.exercises.map(exercise => (
-                  <option key={exercise.id} value={exercise.id}>
-                    {exercise.name}
-                  </option>
-                ))}
-              </select>
-              <label htmlFor="exercise">Exercise</label>
 
             </div>
             <div className="alignRight">
