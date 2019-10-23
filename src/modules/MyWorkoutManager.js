@@ -24,9 +24,6 @@ export default {
  getWithWorkouts(id){
     return fetch(`${remoteURL}/workouts/${id}?_expand=user&_embed=exerciseWorkouts`).then(result => result.json())
   },
-//   getWithWorkouts(id){
-//     return fetch(`${remoteURL}/workouts/${id}?_expand=userId&_embed=exerciseWorkouts`).then(result => result.json())
-//   },
 
   post(newWorkout) {
     return fetch(`${remoteURL}/workouts`, {
@@ -38,13 +35,4 @@ export default {
     }).then(data => data.json());
   },
 
-//   post(newDetailsWorkout) {
-//     return fetch(`${remoteURL}/workouts/${id}`, {
-//         method: "POST",
-//       headers: {
-//         "Content-Type": "application/json"
-//       },
-//       body: JSON.stringify(newDetailsWorkout)
-//     }).then(data => data.json());
-//   },
 }

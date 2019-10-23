@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import MyWorkoutManager from "../../modules/MyWorkoutManager";
+import MyWorkoutCreateDetailsForm from "./MyWorkoutCreateDetailsForm"
 // import './MyWorkoutDetail.css'
 
 class MyWorkoutDetail extends Component {
@@ -30,11 +31,6 @@ class MyWorkoutDetail extends Component {
   render() {
     return (
       <div className="card">
-          <button
-            className="add exercise button"
-            onClick={this.navigateBack}>
-            Add exercise
-        </button>
         <div className="card-content">
           {this.state.workouts.map(exercise => (
             <>
