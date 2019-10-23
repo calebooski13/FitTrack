@@ -7,6 +7,8 @@ import MyWorkoutList from "./myworkout/MyWorkoutList";
 import MyWorkoutForm from "./myworkout/MyWorkoutForm";
 import MyWorkoutDetail from "./myworkout/MyWorkoutDetail";
 import MyWorkoutCreateDetailsForm from "./myworkout/MyWorkoutCreateDetailsForm";
+import ProfileList from "./profile/ProfileList";
+import ProfileForm from "./profile/ProfileForm";
 
 class ApplicationViews extends Component {
 
@@ -48,6 +50,30 @@ class ApplicationViews extends Component {
             return <Register {...props} />;
           }}
         />
+            {/* ___________________PROFILE_________________ */}
+
+            <Route
+          exact
+          path="/profile"
+          render={props => {
+            return this.credentialAuth() ? (
+              <ProfileList {...props} />
+            ) : (
+              <Redirect to="/" />
+            );
+          }}
+        />
+            <Route
+          path="/profile/new"
+          render={props => {
+            return this.credentialAuth() ? (
+              <ProfileForm {...props} />
+            ) : (
+              <Redirect to="/" />
+            );
+          }}
+        />
+
 
             {/* __________________MY WORKOUTS______________ */}
 

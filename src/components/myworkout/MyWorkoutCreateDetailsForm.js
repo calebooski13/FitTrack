@@ -49,7 +49,7 @@ constructNewExerciseEvent = evt => {
 
     // Create the workout and redirect user to workout list
     ExerciseWorkoutManager.post(workoutDetails).then(() =>
-      this.props.history.push("/workouts")
+      this.props.history.push("/myworkouts")
     );
   }
 };
