@@ -34,7 +34,7 @@ class MyWorkoutForm extends Component {
 
       // Create the workout and redirect user to workout list
       MyWorkoutManager.post(workout).then(() =>
-        this.props.history.push("/workouts")
+        this.props.history.push("/myworkouts")
       );
     }
   };
