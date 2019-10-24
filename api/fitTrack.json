@@ -2,23 +2,19 @@
   "users": [
     {
       "id": 1,
-      "username": "admin",
-      "password": "admin",
-      "email": "email@email.com",
-      "name": "John John",
-      "age": 25,
-      "weight": "165 lbs"
-
-
+      "name": "john",
+      "age": "6",
+      "weight": "767",
+      "userId": null
     },
     {
-      "id": 2,
+      "email": "random@random.com",
       "username": "random",
       "password": "random",
-      "email": "random@random.com",
+      "id": 2,
       "name": "James James",
       "age": 27,
-      "weight": "215 lbs"
+      "weight": "245"
     },
     {
       "id": 3,
@@ -37,6 +33,24 @@
       "name": "Mike Mick",
       "age": 21,
       "weight": "145 lbs"
+    },
+    {
+      "email": "johnny@johnny.com",
+      "username": "johnny",
+      "password": "merp",
+      "id": 5,
+      "name": "joey",
+      "age": "65",
+      "weight": "285"
+    },
+    {
+      "email": "booski@booski.com",
+      "username": "booski",
+      "password": "booski",
+      "id": 6,
+      "name": "Broski",
+      "age": "35",
+      "weight": "125"
     }
   ],
   "bodyparts": [

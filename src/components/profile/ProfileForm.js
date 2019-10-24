@@ -4,6 +4,9 @@ import ProfileManager from "../../modules/ProfileManager";
 
 class ProfileForm extends Component {
     state = {
+      username: "",
+      password: "",
+      email: "",
       profileName: "",
       age: "",
       weight: "",
@@ -33,7 +36,7 @@ class ProfileForm extends Component {
 
           // Create the workout and redirect user to workout list
       ProfileManager.post(profile).then(() =>
-      this.props.history.push("/profile")
+      this.props.history.push("/users")
     );
   }
 };
@@ -43,6 +46,33 @@ render() {
       <form>
         <fieldset>
           <div className="formgrid">
+          <input
+                type="text"
+                required
+                onChange={this.handleFieldChange}
+                id="username"
+                value={this.state.username}
+              />
+              <label htmlFor="username">Username</label>
+              <br></br>
+              <input
+                type="text"
+                required
+                onChange={this.handleFieldChange}
+                id="password"
+                value={this.state.password}
+              />
+              <label htmlFor="password">Password</label>
+              <br></br>
+            <input
+                type="text"
+                required
+                onChange={this.handleFieldChange}
+                id="email"
+                value={this.state.email}
+              />
+              <label htmlFor="email">Email</label>
+              <br></br>
             <input
               type="text"
               required
@@ -60,6 +90,7 @@ render() {
               placeholder="Age"
             />
             <label htmlFor="age">Age</label>
+            <br></br>
             <input
               type="text"
               required
