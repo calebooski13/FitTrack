@@ -1,12 +1,15 @@
 import { Route, withRouter, Redirect } from "react-router-dom";
 import React, { Component } from "react";
 import Login from "./authenticate/Login";
-import Register from "./home/Home";
-import Home from "./register/Register";
+import Home from "./home/Home";
+import Register from "./register/Register";
 import MyWorkoutList from "./myworkout/MyWorkoutList";
 import MyWorkoutForm from "./myworkout/MyWorkoutForm";
 import MyWorkoutDetail from "./myworkout/MyWorkoutDetail";
 import MyWorkoutCreateDetailsForm from "./myworkout/MyWorkoutCreateDetailsForm";
+import ProfileList from "./profile/ProfileList";
+import ProfileForm from "./profile/ProfileForm";
+import ProfileEditForm from "./profile/ProfileEditForm";
 
 class ApplicationViews extends Component {
 
@@ -46,6 +49,39 @@ class ApplicationViews extends Component {
           path="/register"
           render={props => {
             return <Register {...props} />;
+          }}
+        />
+            {/* ___________________PROFILE_________________ */}
+
+            <Route
+          exact
+          path="/users"
+          render={props => {
+            return this.credentialAuth() ? (
+              <ProfileList {...props} />
+            ) : (
+              <Redirect to="/" />
+            );
+          }}
+        />
+            <Route
+          path="/users/new"
+          render={props => {
+            return this.credentialAuth() ? (
+              <ProfileForm {...props} />
+            ) : (
+              <Redirect to="/" />
+            );
+          }}
+        />
+            <Route
+          path="/users/:newId(\d+)/edit"
+          render={props => {
+            return this.credentialAuth() ? (
+              <ProfileEditForm {...props} />
+            ) : (
+              <Redirect to="/" />
+            );
           }}
         />
 

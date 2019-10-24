@@ -13,8 +13,6 @@ class MyWorkoutCard extends Component {
           <p>Date: {this.props.workoutProp.date}</p>
 
           <Link to={`/workouts/${this.props.workoutProp.id}`}><button>Details</button></Link>
-          <button type="button"
-        onClick={() => {this.props.history.push(`/workouts/${this.props.workoutProp.id}/edit`)}}>Edit</button>
         <button type="button" onClick={() => this.props.deleteWorkout(this.props.workoutProp.id)}>Delete</button>
 
         </div>
