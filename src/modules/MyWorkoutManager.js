@@ -5,8 +5,8 @@ export default {
         return fetch(`${remoteURL}/workouts?userId=${id}`).then(result => result.json())
  },
 
- getAll() {
-    return fetch(`${remoteURL}/workouts`).then(result => result.json());
+ getAll(id) {
+    return fetch(`${remoteURL}/workouts?userId=${id}`).then(result => result.json());
   },
 
 // Delete a workout
