@@ -13,7 +13,6 @@ class MyWorkoutCreateDetailsForm extends Component {
   };
 
 componentDidMount() {
-    console.log("WORKOUT LIST: ComponentDidMount");
     //getAll from MyWorkoutManager and hang on to that data; put it in state
     ExerciseWorkoutManager.getAllThemExercises(localStorage.getItem("exerciseId")).then(exercisesFromDatabase => {
       this.setState({
@@ -23,12 +22,12 @@ componentDidMount() {
   }
 
 handleFieldChange = evt => {
-  console.log("this is event.target.id", evt.target.id);
-  console.log("this is event.target.value", evt.target.value);
   const stateToChange = {};
   stateToChange[evt.target.id] = evt.target.value;
   this.setState(stateToChange);
 };
+
+// Create the details of a workout
 
 constructNewExerciseEvent = evt => {
   evt.preventDefault();
@@ -42,7 +41,6 @@ constructNewExerciseEvent = evt => {
       weight: this.state.weight,
       exerciseId: +this.state.exerciseId,
       workoutId: +this.props.match.params.workoutId,
-      // exercise: this.state.exercises.name,
 
       active: true,
     };
@@ -74,8 +72,8 @@ render() {
                 ))}
               </select>
               <label htmlFor="exercise">Exercise</label>
-              <br></br>
 
+<br></br>
               <input
                 type="number"
                 required
@@ -85,7 +83,7 @@ render() {
                 placeholder="Sets"
               />
               <label htmlFor="sets">Sets</label>
-              <br></br>
+
               <input
                 type="number"
                 required
@@ -95,7 +93,7 @@ render() {
                 placeholder="Reps"
               />
               <label htmlFor="reps">Reps</label>
-              <br></br>
+
               <input
                 type="text"
                 required
@@ -104,7 +102,7 @@ render() {
                 placeholder="Weight"
               />
               <label htmlFor="weight">Weight</label>
-<br></br>
+
 
             </div>
             <div className="alignRight">

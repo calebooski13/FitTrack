@@ -20,10 +20,6 @@
     color: rgb(255, 255, 255);
   }
 
-  .content-petname {
-    color: darkslategrey;
-  }
-
   .card button {
     background-color:rgb(70, 54, 54);
     border: double;

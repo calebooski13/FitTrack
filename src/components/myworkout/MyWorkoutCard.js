@@ -6,9 +6,6 @@ class MyWorkoutCard extends Component {
     return (
       <div className="card">
         <div className="card-content">
-        {/* <picture>
-            <img src={require('./event.png')} alt="Event" />
-          </picture> */}
           <h3>Name: <b>{this.props.workoutProp.name}</b></h3>
           <p>Date: {this.props.workoutProp.date}</p>
 

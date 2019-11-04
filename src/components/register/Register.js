@@ -67,13 +67,14 @@ class Register extends Component {
                     placeholder="User Name"
                     required="" autoFocus="" />
                 <label htmlFor="inputUserName">User Name</label>
-
+                
                 <input onChange={this.handleFieldChange} type="email"
                     id="email"
                     placeholder="E-mail Address"
                     required="" autoFocus="" />
                 <label htmlFor="inputUserName">E-mail Address</label>
 
+              
                 <input onChange={this.handleFieldChange} type="password"
                     id="password"
                     placeholder="Password"
