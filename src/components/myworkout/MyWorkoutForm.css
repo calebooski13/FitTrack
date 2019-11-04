@@ -1,0 +1,74 @@
+fieldset {
+    max-width: 40em;
+    padding: 4px;
+    margin: 2em auto;
+    border: 0 none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background:rgb(131, 66, 66);
+}
+
+fieldset input, fieldset button{
+    box-sizing: border-box;
+    padding: .2em .4em;
+    margin: .2em 0;
+    outline: none;
+    box-shadow: none;
+}
+
+fieldset button {
+    max-width: 9em;
+    padding: .5em;
+    margin: .3em auto;
+    background-color: rgb(65, 49, 204);
+    border: none;
+    color: cornsilk;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 2px;
+    width: 100%;
+    cursor: pointer;
+}
+
+fieldset label {
+    box-sizing: border-box;
+    user-select: none;
+    cursor: pointer;
+}
+fieldset input:focus + label {
+    color: rgb(255, 255, 255);
+}
+
+fieldset .formgrid {
+    display: grid;
+    grid-template-columns: 1fr 1em 2fr;
+    grid-gap: .3em .6em;
+    grid-auto-flow: dense;
+    align-items: center;
+}
+
+fieldset input, fieldset button {
+    grid-column: 2 /4;
+    width: auto;
+    margin: 0
+}
+
+fieldset .alignRight {
+    text-align: right;
+}
+
+.btn {
+    color:rgb(131, 66, 66);
+}
+
+.home-fitTrack-title{
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px rgb(131, 66, 66), 0 0 30px rgb(131, 66, 66), 0 0 40px rgb(131, 66, 66), 0 0 55px rgb(131, 66, 66), 0 0 75px rgb(131, 66, 66), 2px 2px 2px red;
+    text-align: center;
+    font-size: 6em
+}
+
+.logout-btn{
+    color:rgb(131, 66, 66);
+}

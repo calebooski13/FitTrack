@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import LoginManager from '../../modules/LoginManager'
 import { Link } from "react-router-dom";
+import './Login.css';
 // creating component to display login form and validate credentials
 class Login extends Component {
     // set state
@@ -18,7 +19,6 @@ class Login extends Component {
     // method for handling login event
     handleLogin = (event) => {
         event.preventDefault()
-        // const passAuth = users.password.value
         LoginManager.getOneUser(this.state.username).then(users => {
             console.log(users)
             if (this.state.password === users[0].password) {
@@ -30,6 +30,8 @@ class Login extends Component {
         })
 
     }
+
+    // Login form to sign in
     render() {
         return (
             <form onSubmit={this.handleLogin}>
@@ -37,12 +39,15 @@ class Login extends Component {
                     <h3>Sign In</h3>
                     <div className="xxxxx">
                         <label htmlFor="inputUsername">Username</label>
+                        <br></br>
                         <input onChange={this.handleFieldChange} type="username"
                             id="username"
                             placeholder="Username"
                             required=""
                             autoFocus="" />
+                            <br></br>
                         <label htmlFor="inputPassword">Password</label>
+                        <br></br>
                         <input onChange={this.handleFieldChange} type="password"
                             id="password"
                             placeholder="Password"

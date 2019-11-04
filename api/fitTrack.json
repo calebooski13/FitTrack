@@ -61,7 +61,34 @@
       "id": 7,
       "name": "Tommy Spurlock",
       "age": "31",
-      "weight": "203"
+      "weight": "185"
+    },
+    {
+      "email": "Liz@liz.com",
+      "username": "Liz",
+      "password": "Liz",
+      "id": 8,
+      "name": "Liz",
+      "age": "21",
+      "weight": "185 lbs"
+    },
+    {
+      "email": "cheap@cheap.com",
+      "username": "cheap",
+      "password": "1234",
+      "id": 9,
+      "name": "Joe",
+      "age": "35",
+      "weight": "165 lbs"
+    },
+    {
+      "email": "high@high.com",
+      "username": "high",
+      "password": "high",
+      "id": 10,
+      "name": "joe",
+      "age": "120",
+      "weight": "2225"
     }
   ],
   "bodyparts": [
@@ -107,6 +134,34 @@
       "active": true,
       "userId": 1,
       "id": 3
+    },
+    {
+      "name": "Leg workout",
+      "date": "2019-11-22",
+      "active": true,
+      "userId": 2,
+      "id": 4
+    },
+    {
+      "name": "Back workout",
+      "date": "2019-12-12",
+      "active": true,
+      "userId": 9,
+      "id": 5
+    },
+    {
+      "name": "back",
+      "date": "2019-11-13",
+      "active": true,
+      "userId": 10,
+      "id": 6
+    },
+    {
+      "name": "chest day",
+      "date": "2019-12-12",
+      "active": true,
+      "userId": 10,
+      "id": 7
     }
   ],
   "exercises": [
@@ -367,6 +422,69 @@
       "workoutId": 1,
       "active": true,
       "id": 9
+    },
+    {
+      "sets": "4",
+      "reps": "3",
+      "weight": "11",
+      "exerciseId": 3,
+      "workoutId": 2,
+      "active": true,
+      "id": 10
+    },
+    {
+      "sets": "5",
+      "reps": "10",
+      "weight": "45",
+      "exerciseId": 11,
+      "workoutId": 4,
+      "active": true,
+      "id": 11
+    },
+    {
+      "sets": "5",
+      "reps": "5",
+      "weight": "215",
+      "exerciseId": 8,
+      "workoutId": 5,
+      "active": true,
+      "id": 12
+    },
+    {
+      "sets": "14",
+      "reps": "35",
+      "weight": "454",
+      "exerciseId": 9,
+      "workoutId": 5,
+      "active": true,
+      "id": 13
+    },
+    {
+      "sets": "1",
+      "reps": "454",
+      "weight": "65 lbs",
+      "exerciseId": 11,
+      "workoutId": 6,
+      "active": true,
+      "id": 14
+    },
+    {
+      "sets": "65",
+      "reps": "4534",
+      "weight": "334",
+      "exerciseId": 13,
+      "workoutId": 6,
+      "active": true,
+      "id": 15
+    },
+    {
+      "sets": "15",
+      "reps": "3",
+      "weight": "126",
+      "exerciseId": 0,
+      "workoutId": 7,
+      "active": true,
+      "id": 16
     }
   ],
   "photos": [

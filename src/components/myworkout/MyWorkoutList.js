@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-//import the components we will need
 import MyWorkoutCard from "./MyWorkoutCard";
 import MyWorkoutManager from "../../modules/MyWorkoutManager";
 
@@ -20,7 +19,6 @@ class MyWorkoutList extends Component {
   };
 
   componentDidMount() {
-    console.log("WORKOUT LIST: ComponentDidMount");
     //getAll from MyWorkoutManager and hang on to that data; put it in state
     MyWorkoutManager.getAll(localStorage.getItem("userId")).then(workoutsFromDatabase => {
       this.setState({
@@ -30,7 +28,6 @@ class MyWorkoutList extends Component {
   }
 
   render() {
-    console.log("WorkoutList: Render");
 
     return (
       <>

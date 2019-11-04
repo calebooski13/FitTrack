@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import MyWorkoutManager from "../../modules/MyWorkoutManager";
-import MyWorkoutCreateDetailsForm from "./MyWorkoutCreateDetailsForm"
-// import './MyWorkoutDetail.css'
+
 
 class MyWorkoutDetail extends Component {
   state = {
@@ -9,7 +8,6 @@ class MyWorkoutDetail extends Component {
   };
 
   handleDelete = () => {
-    console.log("this is props", this.props)
     //invoke the delete function in MyWorkoutManger and re-direct to the workout list.
     this.setState({loadingStatus: true})
     MyWorkoutManager.delete(this.props.workoutId)
@@ -17,7 +15,6 @@ class MyWorkoutDetail extends Component {
 }
 
   componentDidMount() {
-    console.log("MyWorkoutDetail: ComponentDidMount");
     //get(id) from MyWorkoutManager and hang on to the data; put it into state
     MyWorkoutManager.getAllExercises(this.props.match.params.workoutId).then(
       workoutObject => {
@@ -28,6 +25,8 @@ class MyWorkoutDetail extends Component {
     );
   }
 
+// display the details of the workouts
+
   render() {
     return (
       <div className="card">
@@ -36,11 +35,11 @@ class MyWorkoutDetail extends Component {
             <>
               <h3>
                 Name:{" "}
-                <span style={{ color: "darkslategrey" }}>
+                <span style={{ color: "white" }}>
                   {exercise.exercise.name}
                 </span>
               </h3>
-              <p>{exercise.exercise.url}</p>
+              <p><a href={exercise.exercise.url} target="_blank">How to video</a></p>
               <p>Sets: {exercise.sets}</p>
               <p>Reps: {exercise.reps}</p>
               <p>Weight: {exercise.weight}</p>
@@ -48,11 +47,6 @@ class MyWorkoutDetail extends Component {
             </>
           ))}
         </div>
-        <button
-            className="back button"
-            onClick={this.navigateBack}>
-            Back to workouts
-        </button>
       </div>
     );
   }

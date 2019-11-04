@@ -1,4 +1,4 @@
-import { Route, withRouter, Redirect } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import React, { Component } from "react";
 import Login from "./authenticate/Login";
 import Home from "./home/Home";
@@ -128,16 +128,6 @@ class ApplicationViews extends Component {
             );
           }}
         />
-        {/* <Route
-          path="/myworkout/:workoutId(\d+)/edit"
-          render={props => {
-            return this.credentialAuth() ? (
-              <MyWorkoutEditForm {...props} />
-            ) : (
-              <Redirect to="/" />
-            );
-          }}
-        /> */}
           </React.Fragment>
     );
   }

@@ -26,13 +26,6 @@ class ProfileList extends Component {
     return (
       <>
         <section className="section-content">
-          {/* <button
-            type="button"
-            className="btn"
-            onClick={() => {
-              this.props.history.push("/users/new");
-            }}
-          >Create Profile</button> */}
         </section>
 
         <div className="container-cards">

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import MyWorkoutManager from "../../modules/MyWorkoutManager";
-// import "./MyWorkoutForm.css";
+import "./MyWorkoutForm.css";
 
 class MyWorkoutForm extends Component {
   state = {
@@ -29,7 +29,7 @@ class MyWorkoutForm extends Component {
         name: this.state.workoutName,
         date: this.state.date,
         active: true,
-        userId: 1
+        userId: +localStorage.getItem("userId")
       };
 
       // Create the workout and redirect user to workout list
@@ -53,7 +53,7 @@ class MyWorkoutForm extends Component {
                 placeholder="Workout name"
               />
               <label htmlFor="workoutName">Name</label>
-              <br></br>
+              
               <input
                 type="date"
                 required

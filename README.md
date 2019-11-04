@@ -1,3 +1,7 @@
+#FitTrack
+
+FitTrack is an application that one can create workouts and plan ahead to easily keep track of their progress. Can also delete workouts one didn't find beneficial. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

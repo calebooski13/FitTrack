@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ProfileManager from "../../modules/ProfileManager";
-// import "./AnimalForm.css"
+
 
 class ProfileEditForm extends Component {
   //set the initial state
@@ -54,6 +54,8 @@ console.log(editedProfile)
     });
   }
 
+// Form to edit the profile
+
   render() {
     return (
       <>
@@ -68,7 +70,7 @@ console.log(editedProfile)
                 value={this.state.username}
               />
               <label htmlFor="username">Username</label>
-              <br></br>
+
               <input
                 type="text"
                 required
@@ -77,7 +79,7 @@ console.log(editedProfile)
                 value={this.state.password}
               />
               <label htmlFor="password">Password</label>
-              <br></br>
+
             <input
                 type="text"
                 required
@@ -86,7 +88,7 @@ console.log(editedProfile)
                 value={this.state.email}
               />
               <label htmlFor="email">Email</label>
-              <br></br>
+
               <input
                 type="text"
                 required
@@ -95,7 +97,7 @@ console.log(editedProfile)
                 value={this.state.profileName}
               />
               <label htmlFor="profileName">Name</label>
-              <br></br>
+
               <input
                 type="text"
                 required
@@ -105,7 +107,7 @@ console.log(editedProfile)
                 value={this.state.age}
               />
               <label htmlFor="age">Age</label>
-              <br></br>
+
               <input
                 type="text"
                 required

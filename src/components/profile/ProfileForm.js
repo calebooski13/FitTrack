@@ -13,8 +13,6 @@ class ProfileForm extends Component {
     };
 
     handleFieldChange = evnt => {
-        console.log("this is event.target.id", evnt.target.id);
-        console.log("this is event.target.value", evnt.target.value);
         const profileStateToChange = {};
         profileStateToChange[evnt.target.id] = evnt.target.value;
         this.setState(profileStateToChange);
@@ -31,7 +29,7 @@ class ProfileForm extends Component {
             age: this.state.age,
             weight: this.state.weight,
             active: true,
-            userId: 1
+            userId: +localStorage.getItem("userId")
           };
 
           // Create the workout and redirect user to workout list
